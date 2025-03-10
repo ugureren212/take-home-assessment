@@ -1,21 +1,42 @@
-## Tipalti React Starter Template
+# Expenses table
+A simple expenses table built with React, TypeScript, and Vite. Only displays the first page of data from the API.
 
-This is a simplified React starter template configured using [Vite](https://vitejs.dev/guide/), a build tool that aims to provide a faster and leaner development experience.
+## Prerequisites
 
-It has minimal dependencies and configuration to allow for easy installation and to allow the candidate to make their own decisions about styling, external libraries and other tooling.
+- Node.js (latest LTS version recommended)
+- npm (comes with Node.js)
 
-You are free to make changes to the template but please be aware that those reviewing your work will need to be able to install and run it locally without difficulty.
+## Installation
 
----
+To install the project dependencies, run:
 
-## Usage
+```bash
+npm install
+```
 
-To use the repository for your challenge submission, please clone the repository and create a new repository on your own Github account . Please DO NOT try to push branches, make pull requests  or fork the original source template repository.
+## Development
 
-### Installation
+To start the development server:
 
-From the root folder, run `npm install` to install all required dependencies.
+```bash
+npm run dev
+```
 
-### Running Locally
+This will start the application in development mode. Open your browser and navigate to the URL shown in your terminal (typically http://localhost:5173).
 
-From the root folder, run `npm run dev` to run a local server with hot reloading.
+
+## Running Tests
+
+This project uses Cypress for testing. To run the tests first run the development server:
+
+```bash
+npm run dev
+```
+
+Then run the tests in a seperate terminal with:
+
+```bash
+npx cypress open
+```
+
+E2E Testing --> Start E2E Testing in Chrome --> expensesTable
